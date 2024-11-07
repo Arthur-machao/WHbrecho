@@ -1,0 +1,125 @@
+/* Estilos gerais */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+header h1 {
+    color: #000000;
+    font-size: 1.8em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.destaques {
+    text-align: center;
+    padding: 20px;
+    color: #000000;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.produto {
+    position: relative;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ffffff;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden; /* Garante que as informações não ultrapassem os limites do cartão */
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.3s ease; /* Animação suave no hover */
+}
+
+.produto img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+}
+
+.info-produto {
+    position: absolute;
+    bottom: 0; /* Posiciona o texto no fundo da imagem */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para centralizar perfeitamente */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semi-transparente */
+    color: #ffffff; /* Texto branco */
+    padding: 20px;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease-in-out; /* Transição suave */
+    overflow-y: auto;
+}
+
+.produto:hover .info-produto {
+    opacity: 100; /* Exibe as informações ao passar o mouse */
+}
+
+.produto h3 {
+    color: #ffffff; /* Texto branco */
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.produto p {
+    color: #ffffff; /* Texto branco */
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    color: #000000;
+    font-size: 0.9em;
+}
